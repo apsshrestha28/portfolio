@@ -1,4 +1,4 @@
-const introduction = ["Aleena Bhari","Full Stack Developer"];
+const introduction = ["Aleena Bhari","Software Developer"];
 let count = 0;
 let index = 0;
 let letter = "";

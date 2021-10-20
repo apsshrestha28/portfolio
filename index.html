@@ -10,14 +10,14 @@
   <title>Aleena Bhari</title>
 </head>
 <body>
-  <div class="portfolio">
+  <div id="portfolio">
     <video muted autoplay loop class="video-section">
       <source src="./assets/bgvideo1.mp4" type="video/mp4" media="">
     </video>
     
     <div class="portfolio-content">
 
-      <nav class="navbar-expand-lg sticky-top">
+      <nav class="navbar-expand-lg sticky-top n">
         <a class="navbar-brand initials" href="#">AB</a>
         <ul class="navbar-nav mr-auto ">
           <li class="nav-item ">
@@ -35,7 +35,7 @@
         </ul>    
       </nav>
 
-      <div class="icons icons-primary">
+      <div class="icons icons-primary" id="social-links">
         <a href="https://github.com/apsshrestha28" target="_blank">
           <i class="fab fa-github"></i>
         </a>
@@ -56,9 +56,10 @@
         <div class="image img-size"></div>
         <div class="card">
           <h4>About Me</h4>
-          <p>Hi,I am Aleena Bhari.
-            I am a passionate Web Developer skilled at writing efficient code using the latest best practice in web development.</p>
-          <h5>Technical skills</h5>
+          <p>Hi, my name is Aleena Bhari.
+            I am a software developer skilled at building user friendly website using the latest best practice in web development. I have completed Web Development Bootcamp from Codecore college and built many projects which you can view on my github.</p>
+      
+          <h5>Technical skills :</h5>
             <strong> Front End:</strong>
             <p> React, JavaScript, TypeScript, HTML, CSS, Bootstrap, Responsive Web Design</p>
             <strong>Framework & Libraries:</strong>
@@ -74,45 +75,47 @@
       <div id="projects-list">
         <div class="card">
           <h4>Projects</h4>
-          <div class="projects grid grid--1x3">
+          <div class="projects grid grid--align">
             <div class="projects_individual">
               <a href="https://github.com/apsshrestha28/rideshare_web_application" target="_blank">
-                <img class="projects-img" src="./assets/rideshare.png" alt="rideshare_app"></img>
+                <img class="projects-img" src="./assets/rideshare.png" alt="rideshare_app" title="rideshare"></img>
               </a>
             </div>
+
+            <div class="projects_individual">
+              <a href="https://github.com/apsshrestha28/spacex" target="_blank">
+                <img class="projects-img" src="./assets/spacex.png" alt="spacex_app" title="SpaceX"></img>
+              </a>
+            </div>
+
+
+            <div class="projects_individual">
+              <a href="https://github.com/apsshrestha28/hangman_game" target="_blank">
+                <img class="projects-img" src="./assets/hangman2.png" alt="hangman_game" title="hangman"></img>
+              </a>
+            </div>
+
             <div class="projects_individual">
               <a href=" https://github.com/apsshrestha28/super_team_picker_web_application
               " target="_blank">
-                <img class="projects-img" src="./assets/super_team_picker.png" alt="super_team_picker_app"></img>
+                <img class="projects-img" src="./assets/super_team_picker.png" alt="super_team_picker_app" title="super team picker"></img>
               </a>
            </div>
-        
-            <div class="projects_individual">
-              <a href="https://github.com/apsshrestha28/hangman_game" target="_blank">
-                <img class="projects-img" src="./assets/hangman2.png" alt="hangman_game"></img>
-              </a>
-            </div>
-          </div>
-          <div class="projects grid grid--1x3">
-            <div class="projects_individual">
-              <a href="https://github.com/apsshrestha28/spacex" target="_blank">
-                <img class="projects-img" src="./assets/spacex.png" alt="spacex_app"></img>
-              </a>
-            </div>
+
             <div class="projects_individual">
               <a href=" https://github.com/apsshrestha28/bidding_web_application
               " target="_blank">
-                <img class="projects-img" src="./assets/bidding.png" alt="bidding_web_application"></img>
+                <img class="projects-img" src="./assets/bidding.png" alt="bidding_web_application" title="bidding app"></img>
               </a>
            </div>
         
             <div class="projects_individual">
               <a href="https://github.com/apsshrestha28/todo_CLI" target="_blank">
-                <img class="projects-img" src="./assets/todo_cli.png" alt="todo_CLI"></img>
+                <img class="projects-img" src="./assets/todo_cli.png" alt="todo_CLI" title="todo CLI"></img>
               </a>
             </div>
         
-          </div>
+          </div>  
         </div>
       </div>
 
@@ -137,7 +140,9 @@
           </div>
         </div>
       </div>   
-     
+
+      <center><a href="#portfolio" class="back_to_top"><i class="fas fa-arrow-circle-up"></i></a></center>
+
       <footer>Website built by Aleena Bhari</footer>
   </div>
   <script src="./app.js"></script>

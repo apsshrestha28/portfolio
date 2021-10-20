@@ -22,6 +22,7 @@ h4 {
 
 }
 
+
 a:hover {
   cursor: pointer;
   text-decoration: none; 
@@ -144,21 +145,30 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 0 10px #9cafd1;
-  padding: 20px 35px;
-  width: 70%;
+  padding: 20px 30px;
+  width: 80%;
   text-align: justify;
   overflow: hidden;
 
 }
 
+.card h4 {
+  font-size: 2.5rem;
+}
+.card h5 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-decoration: underline;
+}
 .portfolio-content .card {
   background-color: var(--color-accent);
   color: var(--color-secondary);
 }
 
-.display-content {
-  display: flex;
-  flex-direction: column;
+@media screen and (max-width: 599px) {
+  .card {
+    text-align: left;
+  }
 }
 
 /* Image */
@@ -208,6 +218,12 @@ a:hover {
   cursor: pointer;
  
 }
+
+#projects-img[title]:hover:after {
+  content: attr(title);
+  position: absolute;
+}
+
 .projects-img:hover {
   opacity: 1;
 }
@@ -219,14 +235,27 @@ a:hover {
 .grid {
   display: grid;
 }
-.grid--1x3 {
+.grid--align{
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2,1fr);
 
 }
 .grid > * + * {
   margin-left: 1rem;
 }
 
+@media screen and (max-width: 599px) {
+  .grid--align{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6,1fr);
+  
+  }
+}
+
+.back_to_top {
+  font-size: 2rem;
+ 
+}
 
 /*Footer */
 
